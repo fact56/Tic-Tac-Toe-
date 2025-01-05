@@ -1,0 +1,74 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff99cc, #ff66b2);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Board styling */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.cell {
+  background-color: #fff;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+/* Result styling */
+#result {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+/* Restart button */
+#reset {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+  background-color: #ff3385;
+}
